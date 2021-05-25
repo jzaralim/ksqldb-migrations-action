@@ -1,0 +1,14 @@
+name: ksqlDB Migrations Validate
+description: validate ksqlDB schema with GitHub actions
+inputs:
+  config:
+    description: Path to config file
+    default: /github/workspace/ksql-migrations.properties
+runs:
+  using: docker
+  image: docker://confluentinc/ksqldb-cli:0.17.0
+  args:
+    - ksql-migrations
+    - validate
+    - -c
+    - ${{ inputs.config }}
