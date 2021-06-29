@@ -2,7 +2,7 @@
 
 This repository demonstrates the use of GitHub Actions to perform [schema migrations](https://docs.ksqldb.io/en/latest/operate-and-deploy/migrations-tool/) upon a ksqlDB cluster running in [Confluent Cloud](https://www.confluent.io/confluent-cloud/).
 
-**➡️ Check out the companion blog post (link TBD) for the full story**
+**➡️ Check out [the companion blog post](https://www.confluent.io/blog/easily-manage-database-migrations-with-evolving-schemas-in-ksqldb/) for the full story**
 
 ### Repository structure
 
