@@ -8,9 +8,9 @@ jobs:
       - uses: actions/checkout@v2
       - uses: franzbischoff/replace_envs@v1
         env:
-          CONFLUENT_KSQLDB_ENDPOINT: ${{ secrets.CONFLUENT_KSQLDB_ENDPOINT }}
-          CONFLUENT_KSQLDB_API_KEY: ${{ secrets.CONFLUENT_KSQLDB_API_KEY }}
-          CONFLUENT_KSQLDB_API_SECRET: ${{ secrets.CONFLUENT_KSQLDB_API_SECRET }}
+          CONFLUENT_KSQLDB_ENDPOINT: https://pksqlc-357n2.westeurope.azure.confluent.cloud:443
+          CONFLUENT_KSQLDB_API_KEY: DRURH3JDXKVKP3JM
+          CONFLUENT_KSQLDB_API_SECRET: oM5WZePpw3Lpcuzf02fW6ykXTjwl4gdYmcJ2/uNirW0zU6EivrD0p1gG7bXLwMVF
         with:
           from_file: 'ksql-migrations.properties'
           to_file: 'ksql-migrations.properties'

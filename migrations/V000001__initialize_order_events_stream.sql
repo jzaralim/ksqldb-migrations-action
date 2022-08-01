@@ -9,3 +9,4 @@ CREATE STREAM ORDER_EVENTS (
   partitions=1,
   value_format='json'
 );
+
